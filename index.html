@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solid26 — A stable foundation to build on</title>
+  <meta name="description" content="Solid26 is the first annual release of the Solid specification — a curated, tested collection of standards, best practices, and documentation.">
+  <style>
+    :root {
+      --solid-royal-lavender: #7C4DFF;
+      --solid-deep-sky-blue: #00B0FF;
+      --solid-cerulean-blue: #0091EA;
+      --solid-gradient: linear-gradient(135deg, #7C4DFF 0%, #00B0FF 50%, #0091EA 100%);
+      --text-primary: #1a1a2e;
+      --text-secondary: #4a4a6a;
+      --bg-light: #f8f7fc;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--solid-royal-lavender);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header / Masthead */
+    header {
+      background-color: var(--solid-royal-lavender);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header svg {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+
+    header .site-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--solid-gradient);
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero .subtitle {
+      font-size: 1.35rem;
+      opacity: 0.92;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* Main content */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--solid-royal-lavender);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid var(--solid-royal-lavender);
+    }
+
+    section h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    section ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    section ul li {
+      margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Audience cards */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .audience-card {
+      background: var(--bg-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      border-left: 4px solid var(--solid-royal-lavender);
+    }
+
+    .audience-card strong {
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 0.4rem;
+      color: var(--text-primary);
+    }
+
+    .audience-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    /* Events */
+    .event-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .event-list li {
+      background: var(--bg-light);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .event-list li strong {
+      color: var(--text-primary);
+    }
+
+    /* CTA section */
+    .cta-section {
+      background: var(--bg-light);
+      border-radius: 12px;
+      padding: 2.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta-section h2 {
+      border-bottom: none;
+      text-align: center;
+    }
+
+    .cta-section p {
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--solid-royal-lavender);
+      color: var(--white);
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--solid-royal-lavender);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    footer p {
+      opacity: 0.85;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1.1rem;
+      }
+
+      main {
+        padding: 2rem 1.25rem 3rem;
+      }
+
+      section h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 322" aria-label="Solid logo">
+      <g fill-rule="nonzero" fill="none">
+        <path d="M87.97296 282.3527L27.24133 177.02207c-5.62041-9.75765-5.62041-21.77908 0-31.53674L87.97296 40.2328c5.64643-9.78367 16.08061-15.79439 27.32143-15.79439h121.3852c11.26684 0 21.72704 6.01072 27.32143 15.7944l60.75765 105.30458c5.62041 9.75766 5.62041 21.77909 0 31.53674l-60.73163 105.33061c-5.64643 9.78367-16.08061 15.79439-27.32143 15.79439H115.37245c-11.31888-.05204-21.72704-6.08878-27.3995-15.84643z" fill="#FFF"/>
+        <path d="M93.15102 275.19708l-57.1148-99.0597c-5.30816-9.1852-5.30816-20.50408 0-29.66326l57.1148-99.08572c5.33418-9.21122 15.14388-14.85765 25.73418-14.85765h114.2296c10.5903 0 20.42602 5.64643 25.73418 14.85765l57.16684 99.03368c5.30816 9.1852 5.30816 20.50408 0 29.66326L258.875 275.2231c-5.33418 9.21122-15.14388 14.85765-25.73418 14.85765H118.93724c-10.64234 0-20.45204-5.67245-25.78622-14.88367z" fill="#7C4DFF"/>
+        <path d="M118.46888 142.2328h117.53418c1.48316 0 2.65408-1.19695 2.65408-2.65409v-22.03928c0-14.6495-11.89132-26.54085-26.54081-26.54085h-70.56735c-20.5301-.026-37.15722 16.60105-37.15722 37.13115-.02594 7.83214 6.271 14.10306 14.07712 14.10306zM129.99592 239.60116H200.225c21.20663 0 38.43214-17.22551 38.43214-38.43214 0-7.07755-5.72449-12.82806-12.82806-12.82806H106.94184c-1.45715 0-2.55005 1.17091-2.55005 2.55v23.05408c-.02597 14.18112 11.47505 25.65612 25.60413 25.65612z" fill="#F7F7F7"/>
+        <path d="M109.59592 139.3185l87.66275 87.66276c5.80255 5.80255 15.19592 5.80255 20.99847 0l15.19592-15.19592c5.80255-5.80255 5.80255-15.19591 0-20.99847l-87.63673-87.66275c-5.80255-5.80255-15.19592-5.80255-20.99847 0l-15.19592 15.19592c-5.8546 5.80255-5.8546 15.22194-.02602 20.99847z" fill="#F7F7F7"/>
+        <path fill="#444" opacity=".3" d="M198.6898 228.46443l-51.4944-40.12347h11.39695zM144.35918 101.66698l40.56582 40.56581h13.7648z"/>
+      </g>
+    </svg>
+    <span class="site-title">Solid26</span>
+  </header>
+
+  <div class="hero">
+    <h1>Solid26</h1>
+    <p class="subtitle">A stable foundation to build on</p>
+  </div>
+
+  <main>
+
+    <section>
+      <p>Solid26 is the first annual release of the Solid specification — a curated, tested collection of standards, best practices, and documentation that gives developers, organisations, and communities a stable target to build against.</p>
+      <p>Whether you're a developer building your first Solid app, an enterprise evaluating the technology, or a researcher exploring new data architectures — Solid26 is your starting point.</p>
+    </section>
+
+    <section>
+      <h2>What is Solid26?</h2>
+      <p>Solid has been evolving since its creation by Sir Tim Berners-Lee at MIT in 2014. Over a decade of development has produced a rich set of specifications, tools, and community knowledge — but until now, there has been no single, clearly defined version that says: <em>this is ready to build on</em>.</p>
+      <p>Solid26 changes that. It brings together the core Solid specifications alongside new best practice documents, developer guidance, and sector-specific materials into one coherent release. Think of it as a stable snapshot of the Solid platform — a known-good baseline that application developers and server implementers can target with confidence.</p>
+      <p>The name "Solid26" signals that Solid is a living, rolling standard. Like modern browsers and platforms, it will continue to evolve — with the Community Group making annual releases that build on real-world feedback and adoption.</p>
+    </section>
+
+    <section>
+      <h2>What's included</h2>
+
+      <h3>Core specifications</h3>
+      <p>The Solid26 release curates fixed versions of the most critical and stable specification documents required to build functional Solid servers and applications. These include the <a href="https://solidproject.org/TR/protocol">Solid Protocol</a> (v0.11.0), <a href="https://solid.github.io/webid-profile/">Solid WebID Profile</a> (v1.0.0), <a href="https://solidproject.org/TR/oidc">Solid-OIDC</a> (v0.1.0), and the <a href="https://solidproject.org/TR/acp">Access Control Policy</a> (v0.9.0) specification — alongside specifications for notifications, access requests, and client authentication for scripts. The release document clearly signposts where there may be breaking changes in future releases, so developers can plan accordingly.</p>
+      <p>Full technical details, including specific version pinning and amendment notes, are available in the <a href="https://docs.google.com/document/d/1da2J-NsU3K-4kWEFOvhzIdrvy_KftewXdlxfu401kY0/edit">Solid26 Primer</a>.</p>
+
+      <h3>Best practice documents</h3>
+      <p>New guidance covering practical topics that developers and organisations need, including:</p>
+      <ul>
+        <li>How to organise data within a Solid Pod — including conventions for application-specific data namespacing and container structure</li>
+        <li>How to store and share digital credentials (such as digital driving licences) using Verifiable Credentials</li>
+        <li>How to record data provenance and usage controls — where data came from and what you're permitted to do with it — using PROV-O and ODRL</li>
+      </ul>
+      <p>These best practices should be considered early-stage and are likely to mature into standalone specification documents in future releases.</p>
+
+      <h3>Developer tools and documentation</h3>
+      <p>A growing suite of open-source libraries, templates, and resources hosted at <a href="https://dev.solidproject.org">dev.solidproject.org</a>, including an RDF object mapping library, project templates for popular frameworks like Next.js, and SKILLS.md documents to support AI-assisted development with tools like GitHub Copilot and Claude Code.</p>
+
+      <h3>Sector-specific adoption packs</h3>
+      <p>Tailored materials for distinct communities — from enterprise and government to social good, research, and individual users — containing domain-relevant demos, ontology guidance, and onboarding resources.</p>
+
+      <h3>Non-technical materials</h3>
+      <p>UX demonstrations, explainers, and education materials designed to help non-technical audiences understand what Solid makes possible and why it matters.</p>
+    </section>
+
+    <section>
+      <h2>Who is Solid26 for?</h2>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <strong>Developers</strong>
+          <p>A clear, stable specification to build applications against — with documentation, tutorials, and tools that make it straightforward to get started.</p>
+        </div>
+        <div class="audience-card">
+          <strong>Organisations</strong>
+          <p>Exploring how Solid can support data strategy — whether in financial services, healthcare, government, or other sectors — with adoption packs tailored to their domain.</p>
+        </div>
+        <div class="audience-card">
+          <strong>Researchers</strong>
+          <p>Investigating decentralised data architectures, personal AI, or privacy-preserving technologies, with a production-ready platform and an active academic community.</p>
+        </div>
+        <div class="audience-card">
+          <strong>The Solid community</strong>
+          <p>Contributors, implementers, and advocates who now have a shared reference point for collaboration, feedback, and growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Relationship to Linked Web Storage</h2>
+      <p>The <a href="https://www.w3.org/groups/wg/lws/">Linked Web Storage (LWS) W3C Working Group</a> is currently developing a W3C specification with the Solid specification as one of its input documents. LWS is expected to define a subset of Solid's functionality as a formal W3C standard. Future Solid releases will align with and extend the LWS specification as it matures.</p>
+    </section>
+
+    <section>
+      <h2>Get involved</h2>
+      <p>Solid26 is launching alongside <strong>Solid Week</strong> at the end of April 2026 — a series of events designed to bring the community together:</p>
+      <ul class="event-list">
+        <li>
+          <strong><a href="https://theodi.org/news-and-events/news/announcing-the-solid-symposium-2026/">Solid Hackathon</a></strong> (April 27–29) — A hybrid international event with in-person participation in London, and remote nodes in Belgium, Australia, the United States, and beyond. Build with Solid26 and help shape the next generation of applications.
+        </li>
+        <li>
+          <strong><a href="https://sosy2026.eu/">Solid Symposium</a></strong> (April 30 – May 1) — An international conference dedicated to Solid, featuring talks from researchers, implementers, and organisations working across the ecosystem.
+        </li>
+        <li>
+          <strong><a href="https://www.w3.org/groups/wg/lws/">Linked Web Storage Working Group</a> focus meeting</strong> (April 27–28) — An in-person meeting in London advancing the W3C specification work that underpins Solid's future.
+        </li>
+      </ul>
+      <p>Following the launch, sector-specific working groups will form to test Solid26 in their domains, gather feedback, and identify where the standard needs to go next. If you're interested in leading or joining a working group in your sector, <a href="mailto:solid+info@theodi.org">get in touch</a>.</p>
+    </section>
+
+    <section class="cta-section">
+      <h2>Help shape what comes next</h2>
+      <p>Solid26 is the beginning, not the destination. We are actively tracking the <a href="https://docs.google.com/spreadsheets/d/1F0_TRi3p2caS5oaktYjvnZy5jbElenkIBMkXNA3MCME/edit?gid=0#gid=0">barriers to adoption</a> that the community has identified, and feedback from developers, organisations, and working groups will feed directly into the Solid Community Group — informing priorities for the specification and tooling throughout 2026 and beyond.</p>
+      <p>The Open Data Institute, as steward of the Solid Project with support from Google.org, is coordinating this work in collaboration with the global Solid community.</p>
+      <a href="https://dev.solidproject.org" class="btn-primary">Start building with Solid</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Solid26 — The Open Data Institute, steward of the Solid Project with support from Google.org</p>
+    <p style="margin-top: 0.5rem;"><a href="https://solidproject.org">solidproject.org</a> · <a href="https://dev.solidproject.org">Developer docs</a> · <a href="https://github.com/solid">GitHub</a></p>
+  </footer>
+
+</body>
+</html>

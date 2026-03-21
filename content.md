@@ -13,7 +13,7 @@ This page serves two purposes:
 
 ---
 
-Solid26 is a planned collection of Solid specification versions, best practices, and documentation intended to give developers, organisations, and communities a stable target to build against. It is being developed in collaboration with the [W3C Solid Community Group](https://www.w3.org/community/solid/) and will be subject to the group's processes before release.
+Solid26 is a planned collection of Solid specification versions, best practices, and documentation intended to give developers, organisations, and communities a stable target to build against. The current contents have been proposed by members of the [W3C Solid Community Group](https://www.w3.org/community/solid/), including the [Open Data Institute](https://theodi.org), and will be subject to the group's processes before release.
 
 Whether you're a developer building your first Solid app, an enterprise evaluating the technology, or a researcher exploring new data architectures — Solid26 aims to be your starting point.
 
@@ -94,4 +94,4 @@ Following the launch, sector-specific working groups will form to test Solid26 i
 
 Solid26 is the beginning, not the destination. We are actively tracking the [barriers to adoption](https://docs.google.com/spreadsheets/d/1F0_TRi3p2caS5oaktYjvnZy5jbElenkIBMkXNA3MCME/edit?gid=0#gid=0) that the community has identified, and feedback from developers, organisations, and working groups will feed directly into the Solid Community Group — informing priorities for the specification and tooling throughout 2026 and beyond.
 
-The [Solid Community Group](https://www.w3.org/community/solid/) oversees the development of the Solid specifications. The [Open Data Institute](https://theodi.org), as steward of the Solid Project, is coordinating the development of supporting materials for Solid26 in collaboration with the global Solid community. [Learn more about how the project is governed](/community) or [explore the developer documentation](https://dev.solidproject.org) to start building today.
+The [Open Data Institute](https://theodi.org) [stewards the Solid Project](https://theodi.org/insights/projects/odi-and-solid-building-a-future-where-data-works-for-everyone/) and is coordinating the development of supporting materials for Solid26 in collaboration with the global Solid community. [Learn more about how the project is governed](/community) or [explore the developer documentation](https://dev.solidproject.org) to start building today.

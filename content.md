@@ -2,19 +2,30 @@
 
 ## A stable foundation to build on
 
-Solid26 is the first annual release of the Solid specification — a curated, tested collection of standards, best practices, and documentation that gives developers, organisations, and communities a stable target to build against.
+> **Note:** Solid26 is currently under development. The primer and some specification documents referenced here have not yet been put through the W3C Solid Community Group process. We are working to have this done by the end of April 2026.
 
-Whether you're a developer building your first Solid app, an enterprise evaluating the technology, or a researcher exploring new data architectures — Solid26 is your starting point.
+### Goals of this document
+
+This page serves two purposes:
+
+1. To capture and communicate the goals and planned contents of Solid26, based on discussions in W3C Solid Community Group calls — providing a written reference for what has so far been discussed verbally.
+2. To serve as an announcement and landing page once the documents included in Solid26 have been finalised through the Community Group process.
+
+---
+
+Solid26 is a planned collection of Solid specification versions, best practices, and documentation intended to give developers, organisations, and communities a stable target to build against. The current contents have been proposed by members of the [W3C Solid Community Group](https://www.w3.org/community/solid/), including the [Open Data Institute](https://theodi.org), and will be subject to the group's processes before release.
+
+Whether you're a developer building your first Solid app, an enterprise evaluating the technology, or a researcher exploring new data architectures — Solid26 aims to be your starting point.
 
 ---
 
 ## What is Solid26?
 
-Solid has been evolving since its creation by Sir Tim Berners-Lee at MIT in 2014. Over a decade of development has produced a rich set of specifications, tools, and community knowledge — but until now, there has been no single, clearly defined version that says: *this is ready to build on*.
+Solid has been evolving since its creation by Sir Tim Berners-Lee at MIT in 2014. Over a decade of development has produced a rich set of specifications, tools, and community knowledge — but there is not yet a single, clearly defined collection that says: *this is ready to build on*.
 
-Solid26 changes that. It brings together the core Solid specifications alongside new best practice documents, developer guidance, and sector-specific materials into one coherent release. Think of it as a stable snapshot of the Solid platform — a known-good baseline that application developers and server implementers can target with confidence.
+Solid26 aims to change that. It proposes to bring together core Solid specification versions alongside new best practice documents, developer guidance, and sector-specific materials into one coherent collection. Think of it as a planned stable snapshot of the Solid platform — a known-good baseline that application developers and server implementers could target with confidence.
 
-The name "Solid26" signals that Solid is a living, rolling standard. Like modern browsers and platforms, it will continue to evolve — with the Community Group making annual releases that build on real-world feedback and adoption.
+The name "Solid26" reflects the aspiration for Solid to adopt a rolling release model. Like modern browsers and platforms, the Solid ecosystem would continue to evolve — with annual collections that build on real-world feedback and adoption. Whether this model is adopted is subject to discussion within the W3C Solid Community Group.
 
 ---
 
@@ -22,9 +33,9 @@ The name "Solid26" signals that Solid is a living, rolling standard. Like modern
 
 **Core specifications**
 
-The Solid26 release curates fixed versions of the most critical and stable specification documents required to build functional Solid servers and applications. These include the [Solid Protocol](https://solidproject.org/TR/protocol) (v0.11.0), [Solid WebID Profile](https://solid.github.io/webid-profile/) (v1.0.0), [Solid-OIDC](https://solidproject.org/TR/oidc) (v0.1.0), and one of [Web Access Control (WAC)](https://solidproject.org/TR/wac) or [Access Control Policy (ACP)](https://solidproject.org/TR/acp) for access control (see [discussion thread](https://lists.w3.org/Archives/Public/public-solid/2026Mar/0019.html)) — alongside specifications for notifications, access requests, and client authentication for scripts. The release document clearly signposts where there may be breaking changes in future releases, so developers can plan accordingly.
+Solid26 proposes to collect fixed versions of the most critical and stable specification documents needed to build functional Solid servers and applications. The planned specifications include the [Solid Protocol](https://solidproject.org/TR/protocol) (v0.11.0), [Solid WebID Profile](https://solid.github.io/webid-profile/) (v1.0.0), [Solid-OIDC](https://solidproject.org/TR/oidc) (v0.1.0), and one of [Web Access Control (WAC)](https://solidproject.org/TR/wac) or [Access Control Policy (ACP)](https://solidproject.org/TR/acp) for access control (see [discussion thread](https://lists.w3.org/Archives/Public/public-solid/2026Mar/0019.html)) — alongside specifications for notifications, access requests, and client authentication for scripts. The included specifications and their versions are subject to confirmation through the W3C Solid Community Group process. The collection will clearly signpost where there may be breaking changes in future versions, so developers can plan accordingly.
 
-Full technical details, including specific version pinning and amendment notes, are available in the [Solid26 Primer](https://docs.google.com/document/d/1da2J-NsU3K-4kWEFOvhzIdrvy_KftewXdlxfu401kY0/edit).
+Full technical details, including proposed version pinning and amendment notes, are available in the [Solid26 Primer](https://docs.google.com/document/d/1da2J-NsU3K-4kWEFOvhzIdrvy_KftewXdlxfu401kY0/edit) (draft).
 
 **Best practice documents**
 
@@ -83,4 +94,4 @@ Following the launch, sector-specific working groups will form to test Solid26 i
 
 Solid26 is the beginning, not the destination. We are actively tracking the [barriers to adoption](https://docs.google.com/spreadsheets/d/1F0_TRi3p2caS5oaktYjvnZy5jbElenkIBMkXNA3MCME/edit?gid=0#gid=0) that the community has identified, and feedback from developers, organisations, and working groups will feed directly into the Solid Community Group — informing priorities for the specification and tooling throughout 2026 and beyond.
 
-The Open Data Institute, as steward of the Solid Project with support from Google.org, is coordinating this work in collaboration with the global Solid community. [Learn more about how the project is governed](/community) or [explore the developer documentation](https://dev.solidproject.org) to start building today.
+The [Open Data Institute](https://theodi.org) [stewards the Solid Project](https://theodi.org/insights/projects/odi-and-solid-building-a-future-where-data-works-for-everyone/) and is coordinating the development of supporting materials for Solid26 in collaboration with the global Solid community. [Learn more about how the project is governed](/community) or [explore the developer documentation](https://dev.solidproject.org) to start building today.

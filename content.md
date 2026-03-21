@@ -22,7 +22,7 @@ The name "Solid26" signals that Solid is a living, rolling standard. Like modern
 
 **Core specifications**
 
-The Solid26 release curates fixed versions of the most critical and stable specification documents required to build functional Solid servers and applications. These include the [Solid Protocol](https://solidproject.org/TR/protocol) (v0.11.0), [Solid WebID Profile](https://solid.github.io/webid-profile/) (v1.0.0), [Solid-OIDC](https://solidproject.org/TR/oidc) (v0.1.0), and the [Access Control Policy](https://solidproject.org/TR/acp) (v0.9.0) specification — alongside specifications for notifications, access requests, and client authentication for scripts. The release document clearly signposts where there may be breaking changes in future releases, so developers can plan accordingly.
+The Solid26 release curates fixed versions of the most critical and stable specification documents required to build functional Solid servers and applications. These include the [Solid Protocol](https://solidproject.org/TR/protocol) (v0.11.0), [Solid WebID Profile](https://solid.github.io/webid-profile/) (v1.0.0), [Solid-OIDC](https://solidproject.org/TR/oidc) (v0.1.0), and [one of WAC or ACP](https://lists.w3.org/Archives/Public/public-solid/2026Mar/0019.html) for access control — alongside specifications for notifications, access requests, and client authentication for scripts. The release document clearly signposts where there may be breaking changes in future releases, so developers can plan accordingly.
 
 Full technical details, including specific version pinning and amendment notes, are available in the [Solid26 Primer](https://docs.google.com/document/d/1da2J-NsU3K-4kWEFOvhzIdrvy_KftewXdlxfu401kY0/edit).
 

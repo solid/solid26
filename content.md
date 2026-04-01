@@ -13,7 +13,7 @@ This page serves two purposes:
 
 ---
 
-Solid26 is a planned collection of Solid specification versions, best practices, and documentation intended to give developers, organisations, and communities a stable target to build against. The current contents have been proposed by members of the [W3C Solid Community Group](https://www.w3.org/community/solid/), including the [Open Data Institute](https://theodi.org), and will be subject to the group's processes before release.
+Solid26 is a planned collection of Solid specification versions (written as a new implementors guide), best practices, and documentation intended to give developers, organisations, and communities a stable target to build against. **This does not change or remove existing parts of the Solid Specification in any way**. The current contents have been proposed by members of the [W3C Solid Community Group](https://www.w3.org/community/solid/), including the [Open Data Institute](https://theodi.org), and will be subject to the group's processes before release.
 
 Whether you're a developer building your first Solid app, an enterprise evaluating the technology, or a researcher exploring new data architectures — Solid26 aims to be your starting point.
 

@@ -21,7 +21,7 @@ Whether you're a developer building your first Solid app, an enterprise evaluati
 
 ## What is Solid26?
 
-Solid has been evolving since it was developed by Sir Tim Berners-Lee and his team at MIT in 2014. Over a decade of development has produced a rich set of specifications, tools, and community knowledge — but there is not yet a single, clearly defined collection that says: *this is ready to build on*.
+Solid has been evolving since it was developed by Sir Tim Berners-Lee and his team at MIT. Decades of development has produced a rich set of specifications, tools, and community knowledge — but there is not yet a single, clearly defined collection that says: *this is ready to build on*.
 
 Solid26 aims to change that. It proposes to bring together core Solid specification versions alongside new best practice documents, developer guidance, and sector-specific materials into one coherent collection. Think of it as a planned stable snapshot of the Solid platform — a known-good baseline that application developers and server implementers could target with confidence.
 

@@ -6,10 +6,7 @@
 
 ### Goals of this document
 
-This page serves two purposes:
-
-1. To capture and communicate the goals and planned contents of Solid26, based on discussions in W3C Solid Community Group calls — providing a written reference for what has so far been discussed verbally.
-2. To serve as an announcement and landing page once the documents included in Solid26 have been finalised through the Community Group process.
+This page works to capture and communicate the goals and planned contents of Solid26, based on discussions in W3C Solid Community Group calls — providing a written reference for what has so far been discussed verbally.
 
 ---
 
